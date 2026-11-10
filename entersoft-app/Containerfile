@@ -1,0 +1,9 @@
+FROM docker.io/library/nginx
+
+LABEL "My Container File via git repo"
+
+COPY /etc/hosts /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+CMD '/usr/share/nginx '
